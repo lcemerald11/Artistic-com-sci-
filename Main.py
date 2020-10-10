@@ -23,12 +23,13 @@ def tree(x,y,scale):
   painter.fillcolor("green")
   painter.color("green")
   painter.begin_fill()
-  painter.goto((x+1.5), (y + 15))
+  painter.goto((x+1.5*scale), (y + 14*scale))
+  painter.setheading(180)
   painter.circle((9*scale),360,3)
   painter.end_fill()
 
 
 
-tree(1, 2, 1)
+tree(1, 2, 2)
 wn = trtl.Screen()
 wn.mainloop()
